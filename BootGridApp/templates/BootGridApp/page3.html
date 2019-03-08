@@ -1,9 +1,9 @@
 {% extends 'BootGridApp/base.html' %}
 <!--it all populates inside block content and that allows it take it's place without issue-->
 {% block content %}
-<div>
+<div style="background: red">
 <header>
-    <h1>Page <span>Three</span></h1>
+    <h1><small>Page</small> <span>Three</span></h1>
 </header>
 
 <section>
@@ -13,7 +13,7 @@
 </section>
 
     <nav>
-<button><a href="{% url 'pageTwo' %}">Previous</a></button>
+        <a href="{% url 'pageTwo' %}"><button>Previous</button></a>
     </nav>
 </div>
 {% endblock content %}

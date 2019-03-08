@@ -1,9 +1,9 @@
 {% extends 'BootGridApp/base.html' %}
 
 {% block content %}
-<div>
+<div style="background: green">
 <header>
-    <h1>Page <span>Two</span></h1>
+    <h1><small>Page</small> <span>Two</span></h1>
 </header>
 
 <section>
@@ -13,8 +13,8 @@
 </section>
 <!--i simply added and removed content as necessary for example the buttons uesd for previous and next-->
     <nav>
-<button><a href="{% url 'index' %}">Previous</a></button>
-<button><a href="{% url 'pageThree' %}">Next</a></button>
+        <a href="{% url 'index' %}"><button>Previous</button></a>
+        <a href="{% url 'pageThree' %}"><button>Next</button></a>
     </nav>
 </div>
 {% endblock content %}
