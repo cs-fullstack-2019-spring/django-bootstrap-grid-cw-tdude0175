@@ -1,0 +1,19 @@
+{% extends 'BootGridApp/base.html' %}
+
+{% block content %}
+<div>
+<header>
+    <h1>Page <span>One</span></h1>
+</header>
+
+<section>
+    <p>stuff</p>
+    <p>stuff</p>
+    <p>stuff</p>
+</section>
+<!--each page uses same layout just different content-->
+    <nav>
+<button><a href="{% url 'pageTwo' %}">Next</a></button>
+    </nav>
+</div>
+{% endblock content %}

@@ -1,0 +1,54 @@
+body
+{
+    margin: 10% 5%;
+}
+/*i used display grid for the div inside so it would be different from the background*/
+div
+{
+    background: darkslategrey;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 80% 20%;
+    padding: 3%;
+}
+
+header
+{
+    grid-column: 1;
+    grid-row: 1;
+    border-right: 1px solid black;
+    text-align: right;
+    padding-right: 2%;
+}
+span
+{
+    font-weight: bolder;
+    font-size: 200%;
+    padding-left: 50%;
+}
+
+section
+{
+    padding: 5%;
+    grid-column: 2/4;
+    grid-row: 1;
+}
+nav
+{
+    text-align: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+button
+{
+    margin: 3%;
+    background: dimgrey;
+    border: 1px solid black;
+    color: black;
+    border-radius: 15%;
+    padding: 4%;
+}
+a
+{
+    color: black;
+}

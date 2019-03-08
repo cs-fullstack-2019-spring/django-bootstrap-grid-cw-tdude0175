@@ -1,0 +1,20 @@
+{% extends 'BootGridApp/base.html' %}
+
+{% block content %}
+<div>
+<header>
+    <h1>Page <span>Two</span></h1>
+</header>
+
+<section>
+    <p>stuff</p>
+    <p>stuff</p>
+    <p>stuff</p>
+</section>
+<!--i simply added and removed content as necessary for example the buttons uesd for previous and next-->
+    <nav>
+<button><a href="{% url 'index' %}">Previous</a></button>
+<button><a href="{% url 'pageThree' %}">Next</a></button>
+    </nav>
+</div>
+{% endblock content %}
